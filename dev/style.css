@@ -1,0 +1,29 @@
+#wn_cont {
+
+}
+
+h1 {
+    font-size: 128pt;
+}
+
+#wn_desc {
+
+}
+
+#wn_startend {
+
+}
+
+#box {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16pt;
+    color: white;
+    text-align: center;
+    margin: 2em 2em 2em 2em;
+    padding: 2em 2em 2em 2em;
+    background-color: rgba(0,0,0,0.7);
+}
+
+body {
+    background-color: #C0FFEE;
+}
