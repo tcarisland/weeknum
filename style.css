@@ -1,25 +1,21 @@
-#wn_cont {
-
-}
 
 h1 {
     font-size: 128pt;
 }
 
-#wn_desc {
-
-}
-
-#wn_startend {
-
-}
-
 #box {
     text-align: center;
-    margin: 2em 2em 2em 2em;
     padding: 2em 2em 2em 2em;
-    background-color: rgba(0,0,0,0.7);
 }
+
+#biggerbox {
+    margin: 1em 1em 1em 1em;
+    text-align: center;
+    margin: 2em 2em 2em 2em;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 30px;    
+}
+
 
 body {
     background-color: #C0FFEE;

@@ -1,5 +1,24 @@
+.button {
+    background-color: #C0FFEE; /* Green */
+    border: none;
+    padding: 1em 1em 1em 1em;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.buttonbox {
+    padding: 2em 2em 2em 2em;
+    display: inline-block;
+}
+
 #wn_cont {
 
+}
+
+tr {
+    padding-bottom: 2em;
 }
 
 h1 {
@@ -15,15 +34,35 @@ h1 {
 }
 
 #box {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16pt;
-    color: white;
     text-align: center;
     margin: 2em 2em 2em 2em;
     padding: 2em 2em 2em 2em;
     background-color: rgba(0,0,0,0.7);
+    border-radius: 30px;
 }
 
 body {
     background-color: #C0FFEE;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16pt;
+    color: white;
+}
+
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: white;
 }
