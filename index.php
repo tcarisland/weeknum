@@ -4,24 +4,19 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>Week Number</title>
 <script>
-    Date.prototype.getWeek = function() {
-        var onejan = new Date(this.getFullYear(), 0, 1);
-        return Math.ceil((((this - onejan) / 86400000) + onejan.getDay() + 1) / 7);
-    }
-
 
     <?php 
        if(isset($_GET["weeknum"])) {
        echo "var weekNumber = " . $_GET["weeknum"]; 
        } else {
-       echo "var weekNumber = (new Date()).getWeek();";
+       echo "var weekNumber = " . date("W");
        }
     ?>
 
     var yearNumber = (new Date()).getFullYear()
 
     function getWeeknumData(week, year, currentweek) { 
-   var xmlhttp = new XMLHttpRequest();
+    var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
     document.getElementById("box").innerHTML = this.responseText;
@@ -49,7 +44,7 @@ $bgcolor = "#" . $bgcolor_arr[0] . $bgcolor_arr[1] . $bgcolor_arr[2];
 <tr>
 <td>
 <div id="box">
-<script>getWeeknumData(weekNumber, yearNumber, (new Date()).getWeek());</script>
+<script>getWeeknumData(weekNumber, yearNumber, <?php echo date("W") ?>);</script>
 </div>
 </td>
 </tr>

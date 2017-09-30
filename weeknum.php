@@ -9,7 +9,9 @@ function getStartAndEndDate($year, $week)
 }
 
 $weeknum = $_REQUEST["weeknum"];
+
 $year = $_REQUEST["year"];
+
 $currentweek = $_REQUEST["currentweek"];
 $current_week_title="The current week is: <br>";
 
